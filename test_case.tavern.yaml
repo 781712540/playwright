@@ -1,0 +1,8 @@
+test_name: 第一个测试用例
+stages:
+  - name: 访问百度接口是否请求成功
+    request:
+      url: https://www.baidu.com/
+      method: GET
+    response:
+      status_code: 200

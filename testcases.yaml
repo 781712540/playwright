@@ -1,5 +1,5 @@
 baidupage:
-  - title: 百度搜索
+  - title: 百度搜索成功
     des: 搜索成功测试用例
     steps:
       - name: 打开百度
@@ -19,4 +19,23 @@ baidupage:
       - name: 点击百度一下按钮
         method: click
         selector: input[id="su"]
+  - title: 百度搜索失败
+    des: 搜索成功测试用例
+    steps:
+      - name: 打开百度
+        method: goto
+        url: https://www.baidu.com/
 
+      - name: 输入playwright
+        method: fill
+        selector: input[name="wd"]
+        value: playwirght
+
+      - name: 输入框回车
+        method: press
+        selector: input[name="wd"]
+        value: Enter
+
+      - name: 点击百度一下按钮
+        method: click
+        selector: input[id="su"]
